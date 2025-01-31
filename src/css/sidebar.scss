@@ -36,12 +36,17 @@
   }
 
   // In the case of sidebar items that are collapsible, the PRO label should be
-  // positioned inwards to prevent overlap with the expand/collapse caret
-  &.pro > .menu__list-item-collapsible > .menu__link {
-    &::after {
-      right: 2.5rem;
-    }
-  }
+  // positioned inwards to prevent overlap with the expand/collapse caret.
+  //
+  // Since there are no such items at this time, this has been commented out,
+  // as it has caused other display issues to crop up. Fixing them will require
+  // more thorough research.
+  //
+  // // &.pro > .menu__list-item-collapsible > .menu__link {
+  // //   &::after {
+  // //     right: 2.5rem;
+  // //   }
+  // // }
 
   /* Default-Expanded Logical Groupings in the Nav (e.g. "CORE" under sync.toHost) */
   &.logical-grouping {
